@@ -1,0 +1,26 @@
+@use './variables' as *;
+@use 'sass:map';
+@mixin font(
+  $size: 1.2rem,
+  $weight: 600,
+  $height: 1.2rem,
+  $family: (
+    'Montserrat',
+    sans-serif,
+  ),
+  $letter-spacing: normal,
+  $text-transform: none
+) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-family: $family;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+}
+
+@mixin respond-to($size) {
+  @media (max-width: map.get($breakpoints, $size)) {
+    @content;
+  }
+}

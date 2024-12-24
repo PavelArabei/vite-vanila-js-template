@@ -1,0 +1,14 @@
+$primary: #ffffff;
+$secondary: #ff4646;
+$tertiary: #181c29;
+$contentBackground: #ecf3f8;
+
+$max-width: 1440px !default;
+
+$breakpoints: (
+  'small': 380px,
+  'small-medium': 576px,
+  'medium': 768px,
+  'medium-large': 946px,
+  'large': 1440px,
+) !default;

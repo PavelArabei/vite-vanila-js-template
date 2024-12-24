@@ -1,0 +1,63 @@
+@use '../abstracts';
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header1 {
+  @include abstracts.font(
+    $size: 3.2rem,
+    $height: 150%,
+    $letter-spacing: 5.75px,
+    $text-transform: uppercase
+  );
+}
+
+.header2 {
+  @include abstracts.font(
+    $size: 2.4rem,
+    $height: 152%,
+    $letter-spacing: 3.8px,
+    $text-transform: uppercase
+  );
+}
+
+.header3 {
+  @include abstracts.font(
+    $size: 1.6rem,
+    $height: 150%,
+    $letter-spacing: 1.3px,
+    $text-transform: uppercase
+  );
+}
+
+.header4 {
+  @include abstracts.font(
+    $size: 1.2rem,
+    $height: 130%,
+    $letter-spacing: 0.6px,
+    $text-transform: uppercase
+  );
+}
+
+.paragraph {
+  @include abstracts.font($size: 1.6rem, $weight: 400, $height: 149%);
+}
+
+.caption {
+  @include abstracts.font(
+    $size: 2.4rem,
+    $weight: 400,
+    $height: 100%,
+    $family: (
+      'Allura',
+      cursive,
+    ),
+    $letter-spacing: 1.1px
+  );
+}
+
+.slider-text {
+  @include abstracts.font(
+    $size: 8rem,
+    $text-transform: uppercase,
+    $letter-spacing: 0.2px
+  );
+}
